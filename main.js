@@ -203,5 +203,35 @@ document.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(animateScrollVideos);
     }
 
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navList = document.querySelector(".nav-list");
+
+    if (hamburger && navList) {
+        hamburger.addEventListener("click", () => {
+            navList.classList.toggle("active");
+            const icon = hamburger.querySelector("i");
+            if (navList.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navList.classList.remove("active");
+                if (hamburger.querySelector("i") && hamburger.querySelector("i").classList.contains("fa-times")) {
+                    hamburger.querySelector("i").classList.remove("fa-times");
+                    hamburger.querySelector("i").classList.add("fa-bars");
+                }
+            });
+        });
+    }
+
 });
 
