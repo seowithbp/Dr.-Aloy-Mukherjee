@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -248,21 +248,35 @@
                   <div class="reviews-track" id="reviews-track">
                       <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"He gave me one of the best medical experiences I've had. The staff was supportive, and Dr. Aloy explained everything in detail before my procedure. My health has improved significantly."</p>
+                          <p class="review-text">"He gave me one of the best medical experiences I've had. For anyone looking for the Best Surgeon for Gastric Bypass Surgery in Delhi, Dr. Aloy is the one. The staff was incredibly supportive."</p>
                           <h5 class="review-patient-name">Rajesh Kumar</h5>
-                      </div>                      <div class="review-card">
+                      </div>
+                      <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"The facility is clean and modern, with advanced tools. I would strongly recommend Dr. Mukherjee for professional surgical services. The recovery was very fast."</p>
+                          <p class="review-text">"The facility is clean and modern, with advanced tools. I strongly recommend him for Gastric Bypass Surgery in Delhi. The recovery was very fast and I am extremely satisfied."</p>
                           <h5 class="review-patient-name">Anil Sharma</h5>
-                      </div>                      <div class="review-card">
+                      </div>
+                      <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                           <p class="review-text">"Doctor was very patient in explaining everything before the surgery. The entire process here is seamless and the recovery is much faster than I expected."</p>
                           <h5 class="review-patient-name">Meena Kapoor</h5>
-                      </div>                      <div class="review-card">
+                      </div>
+                      <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"His 25 years of experience really show. Very professional and calming demeanor while discussing my operation. The staff is also extremely helpful with insurance processing."</p>
+                          <p class="review-text">"His 25 years of experience really show. Very professional and calming demeanor while discussing my operation. If you need an expert, he is extremely helpful."</p>
                           <h5 class="review-patient-name">Priya Desai</h5>
-                      </div>                  </div>
+                      </div>
+                      <div class="review-card">
+                          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <p class="review-text">"I was very nervous before the procedure, but Dr. Mukherjee and his team made me feel completely at ease. The post-operative care was exceptional as well."</p>
+                          <h5 class="review-patient-name">Sanjay Gupta</h5>
+                      </div>
+                      <div class="review-card">
+                          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <p class="review-text">"Choosing Dr. Aloy was the best decision for my health. The surgery went smoothly without any complications, and I was back on my feet in no time."</p>
+                          <h5 class="review-patient-name">Sunita Verma</h5>
+                      </div>
+                  </div>
               </div>
               <div class="text-center mt-4 fade-in-up" style="animation-delay: 0.4s"><a href="index.html#all-reviews" class="btn btn-primary" style="border-radius: 4px;">View all Reviews</a></div>
           </div>
@@ -433,32 +447,10 @@
     </footer>
     <!-- JS -->
     <script src="main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faqs = document.querySelectorAll('.faq-question');
-            faqs.forEach(question => {
-                question.addEventListener('click', () => {
-                    const parent = question.parentElement;
-                    const answer = question.nextElementSibling;
-                    const isActive = parent.classList.contains('active');
-                    document.querySelectorAll('.faq-item').forEach(item => {
-                        item.classList.remove('active');
-                        if(item.querySelector('.faq-answer')) {
-                            item.querySelector('.faq-answer').style.maxHeight = null;
-                        }
-                        item.querySelector('.faq-toggle i').className = 'fas fa-plus';
-                    });
-                    if (!isActive) {
-                        parent.classList.add('active');
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                        question.querySelector('.faq-toggle i').className = 'fas fa-minus';
-                    }
-                });
-            });
-        });
-    </script>
+    
   </body>
 </html>
+
 
 
 

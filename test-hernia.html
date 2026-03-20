@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -383,32 +383,10 @@
     </footer>
     <!-- JS -->
     <script src="main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faqs = document.querySelectorAll('.faq-question');
-            faqs.forEach(question => {
-                question.addEventListener('click', () => {
-                    const parent = question.parentElement;
-                    const answer = question.nextElementSibling;
-                    const isActive = parent.classList.contains('active');
-                    document.querySelectorAll('.faq-item').forEach(item => {
-                        item.classList.remove('active');
-                        if(item.querySelector('.faq-answer')) {
-                            item.querySelector('.faq-answer').style.maxHeight = null;
-                        }
-                        item.querySelector('.faq-toggle i').className = 'fas fa-plus';
-                    });
-                    if (!isActive) {
-                        parent.classList.add('active');
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                        question.querySelector('.faq-toggle i').className = 'fas fa-minus';
-                    }
-                });
-            });
-        });
-    </script>
+    
   </body>
 </html>
+
 
 
 

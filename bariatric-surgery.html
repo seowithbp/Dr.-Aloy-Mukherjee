@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -248,21 +248,35 @@
                   <div class="reviews-track" id="reviews-track">
                       <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"The sleeve gastrectomy gave me my life back. I lost 40kg in a year and my diabetes is completely gone. Best decision ever."</p>
-                          <h5 class="review-patient-name">Sanjay R.</h5>
-                      </div>                      <div class="review-card">
+                          <p class="review-text">"My weight has always been a struggle, but finding the Best Bariatric Surgeon in Delhi changed my life. Dr. Aloy is truly a lifesaver."</p>
+                          <h5 class="review-patient-name">Rajesh Kumar</h5>
+                      </div>
+                      <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"Dr. Aloy is an extremely supportive bariatric surgeon. He answered all my concerns about the bypass surgery thoroughly. The staff is wonderful."</p>
-                          <h5 class="review-patient-name">Preeti N.</h5>
-                      </div>                      <div class="review-card">
+                          <p class="review-text">"The decision to undergo this was terrifying, but getting Bariatric Surgery in Delhi with Dr. Mukherjee was my best decision ever. The facility is very clean."</p>
+                          <h5 class="review-patient-name">Anil Sharma</h5>
+                      </div>
+                      <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"I struggled with obesity my entire life. The bariatric surgery changed my relationship with food and I feel healthier than I ever have."</p>
-                          <h5 class="review-patient-name">Arjun C.</h5>
-                      </div>                      <div class="review-card">
+                          <p class="review-text">"After years of trying everything, Dr. Mukherjee's expertise made all the difference. I wish I had done it sooner with the top specialist!"</p>
+                          <h5 class="review-patient-name">Meena Kapoor</h5>
+                      </div>
+                      <div class="review-card">
                           <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                          <p class="review-text">"Recovery was much easier than I anticipated. The team prepared me very well for my new dietary changes. Grateful for their guidance."</p>
-                          <h5 class="review-patient-name">Priya J.</h5>
-                      </div>                  </div>
+                          <p class="review-text">"The comprehensive care I received before, during, and after my bariatric procedure was phenomenal. The whole team is very supportive."</p>
+                          <h5 class="review-patient-name">Priya Desai</h5>
+                      </div>
+                      <div class="review-card">
+                          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <p class="review-text">"I have lost significant weight and gained my confidence back. Thank you Dr. Aloy for your excellent surgical skills and guidance."</p>
+                          <h5 class="review-patient-name">Sanjay Gupta</h5>
+                      </div>
+                      <div class="review-card">
+                          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <p class="review-text">"From the initial consultation to the follow-ups, everything was structured beautifully. I highly recommend him for anyone considering weight loss surgery."</p>
+                          <h5 class="review-patient-name">Sunita Verma</h5>
+                      </div>
+                  </div>
               </div>
               <div class="text-center mt-4 fade-in-up" style="animation-delay: 0.4s"><a href="index.html#all-reviews" class="btn btn-primary" style="border-radius: 4px;">View all Reviews</a></div>
           </div>
@@ -433,32 +447,10 @@
     </footer>
     <!-- JS -->
     <script src="main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faqs = document.querySelectorAll('.faq-question');
-            faqs.forEach(question => {
-                question.addEventListener('click', () => {
-                    const parent = question.parentElement;
-                    const answer = question.nextElementSibling;
-                    const isActive = parent.classList.contains('active');
-                    document.querySelectorAll('.faq-item').forEach(item => {
-                        item.classList.remove('active');
-                        if(item.querySelector('.faq-answer')) {
-                            item.querySelector('.faq-answer').style.maxHeight = null;
-                        }
-                        item.querySelector('.faq-toggle i').className = 'fas fa-plus';
-                    });
-                    if (!isActive) {
-                        parent.classList.add('active');
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                        question.querySelector('.faq-toggle i').className = 'fas fa-minus';
-                    }
-                });
-            });
-        });
-    </script>
+    
   </body>
 </html>
+
 
 
 
