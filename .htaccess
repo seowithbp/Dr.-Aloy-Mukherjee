@@ -3,3 +3,12 @@ RewriteEngine On
 # Redirect index.html to the root domain
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ https://aloymukherjee.com/ [R=301,L]
+
+# Redirect .html URLs to non-.html
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ https://aloymukherjee.com/%1 [R=301,L,NE]
+
+# Internally serve .html files if a URL without .html is requested
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
