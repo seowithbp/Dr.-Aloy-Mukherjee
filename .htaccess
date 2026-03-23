@@ -4,6 +4,25 @@ RewriteEngine On
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ https://aloymukherjee.com/ [R=301,L]
 
+# 301 Redirects for Old Procedure Pages
+RewriteRule ^procedure-pages/varicocelectomy-surgery/?$ https://aloymukherjee.com/varicocelectomy-surgery [R=301,L]
+RewriteRule ^procedure-pages/laser-piles-treatment-in-delhi/?$ https://aloymukherjee.com/laser-piles-treatment [R=301,L]
+RewriteRule ^procedure-pages/gallbladder-stone-surgery-in-delhi/?$ https://aloymukherjee.com/gallbladder-surgery [R=301,L]
+RewriteRule ^procedure-pages/myasthenia-gravis-surgery/?$ https://aloymukherjee.com/myasthenia-gravis-surgery [R=301,L]
+RewriteRule ^procedure-pages/hernia-surgery/?$ https://aloymukherjee.com/hernia-surgery [R=301,L]
+RewriteRule ^procedure-pages/adrenal-gland-removal/?$ https://aloymukherjee.com/adrenal-gland-removal [R=301,L]
+RewriteRule ^procedure-pages/achalasia-cardia-treatment-in-delhi/?$ https://aloymukherjee.com/achalasia-cardia-treatment [R=301,L]
+RewriteRule ^procedure-pages/bariatric-surgery-in-faridabad/?$ https://aloymukherjee.com/bariatric-surgery [R=301,L]
+RewriteRule ^procedure-pages/bariatric-surgeon-in-gurgaon/?$ https://aloymukherjee.com/bariatric-surgery [R=301,L]
+RewriteRule ^procedure-pages/hernia-surgery-in-gurgaon/?$ https://aloymukherjee.com/hernia-surgery [R=301,L]
+RewriteRule ^procedure-pages/gallbladder-stone-surgery-in-faridabad/?$ https://aloymukherjee.com/gallbladder-surgery [R=301,L]
+RewriteRule ^procedure-pages/hernia-surgery-in-faridabad/?$ https://aloymukherjee.com/hernia-surgery [R=301,L]
+RewriteRule ^procedure-pages/laparoscopic-surgeon-in-faridabad/?$ https://aloymukherjee.com/laparoscopic-surgeon-in-faridabad [R=301,L]
+RewriteRule ^procedure-pages/laser-piles-treatment-in-gurgaon/?$ https://aloymukherjee.com/laser-piles-treatment [R=301,L]
+RewriteRule ^procedure-pages/gallbladder-surgeon-in-gurgaon/?$ https://aloymukherjee.com/gallbladder-surgery [R=301,L]
+RewriteRule ^procedure-pages/bariatric-weight-loss-surgery/?$ https://aloymukherjee.com/bariatric-surgery [R=301,L]
+RewriteRule ^procedure-pages/diagnostic-laparoscopy/?$ https://aloymukherjee.com/ [R=301,L]
+
 # Redirect .html URLs to non-.html
 RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
 RewriteRule ^ https://aloymukherjee.com/%1 [R=301,L,NE]
